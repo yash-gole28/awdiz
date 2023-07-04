@@ -6,17 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        table, tr, td ,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        .myImg{
+            padding: 20px;
+            margin: px;
+        }
+        .PDetails{
+            padding: 20px;
+        }
+        .objective{
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
 
-<body >
-    <div style="background-color: rgb(249, 223, 223);">
-        
+<body>
+    <div style="background-color: rgb(247, 239, 233);">
+
         <h1 style="text-align: center;background-color: rgb(238, 212, 212);">Yash Gole</h1>
-        <div>
-            <span>
+        <div style="display: flex;justify-content: space-between;">
+            <span class="myImg">
                 <img src="IMG_20210622_211831-1.jpg" alt="" height="100" width="100">
             </span><br>
-            <span>
+            <span class="PDetails">
                 <span><img src="mail.png" alt="" height="15" width="15"></span>
                 <span>yashgole2806@gmail.com</span></br>
                 <span><img src="images.png " alt="" height="15" width="15"></span>
@@ -30,11 +48,12 @@
         <br><br>
         <hr>
         <br>
-        <div>
+        <div class="objective">
             <h3>Objective</h3>
 
-            <span>
-                <p style="width: 1000px;font-family: sans-serif;font-size: 15px;">To be in a challenging career that would allow me to contribute proactively in
+            <span style="width: 1000px;font-family: sans-serif;font-size: 15px;">
+                <p >To be in a challenging career that
+                    would allow me to contribute proactively in
                     achieving the organizational objectives by making optimum use of my technical knowledge & experience
                     while moving ahead on a path of professional growth and continuous self-improvement through
                     continuous learning process</p>
@@ -42,51 +61,70 @@
         </div>
         <br>
         <hr>
-        <div><br>
+        <div ><br>
             <h3>Academic Qualification</h3>
             <br>
-            <table style="background-color: rgb(244, 210, 210);border: 1px solid black;width: 1000px;font-family: sans-serif;">
+            <table
+                style="background-color: rgb(244, 210, 210); font-family: sans-serif;width: 70%;">
+                <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Board</th>
+                    <th>Degree</th>
                     <th>College Name</th>
+                    <th>Year of Passing</th>
                     <th>Percentage</th>
                 </tr>
-
+            </thead>
+            <tbody >
                 <tr style="text-align: center;">
                     <td>1</td>
                     <td>SSC</td>
                     <td>IES Navi Mumbai Vashi</td>
+                    <td>2017-2018</td>
                     <td>79%</td>
                 </tr>
                 <tr style="text-align: center;">
                     <td>2</td>
                     <td>HSC</td>
                     <td>Modern College Vashi</td>
+                    <td>2019-2020</td>
                     <td>59%</td>
                 </tr>
                 <tr style="text-align: center;">
                     <td>3</td>
                     <td>BSc.IT</td>
                     <td>ICLES Motilal Jhunjhunwala College Vashi</td>
+                    <td>2022-2023</td>
                     <td>present</td>
                 </tr>
+            </tbody>
             </table>
         </div>
         <br>
         <hr>
         <br>
         <div>
+            <h3>Technical skills</h3>
+            <ol type="i">
+                <li>html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+
+        </div>
+        <div>
+            <hr>
             <br>
-            <h3>Non Technical Skills</h3>
-            <br>
-            <span style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Quick learning</span><br>
-            <span style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Teamwork</span><br>
-            <span style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Adaptability</span><br>
+            <h3>Non Technical Skills:-</h3>
+        
+            <ul style="list-style: square;">
+                <li style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Quick learning</li>
+                <li style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Teamwork</li>
+                <li style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Adaptability</li>
+            </ul>
             <br>
             <hr>
             <br>
-
         </div>
     </div>
 </body>

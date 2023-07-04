@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #Uname {
+            width: 250px;
+            height: 20px;
+        }
+
+        #Email {
+            width: 250px;
+            height: 20px;
+        }
+
+        #pass {
+            width: 250px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;justify-content: center;margin: auto;">
+        <span style="align-content: center;margin: 5%;">
+            <h1 style="color: blue;">Fill your details</h1><br><br>
+            <form>
+                <label for="Uname" style="font-size: 20px;">Username</label>
+                <br>
+                <input type="text" id="Uname" placeholder="username">
+                <br>
+                <br>
+                <label for="Email" style="font-size: 20px;">Email</label>
+                <br>
+                <input type="email" id="Email" placeholder="Email">
+                <br>
+                <br>
+                <label for="pass" style="font-size: 20px;">Password</label>
+                <br>
+                <input type="password" id="pass" placeholder="password">
+                <br>
+                <br>
+                <span>
+                    <label for="radio" style="font-size: 20px;">Gender</label>
+                    <br>
+                    <input type="radio" name="gender" id="GenderMale">
+                    <label for="GenderMale"> Male </label>
+                    <input type="radio" name="gender" id="GenderFemale">
+                    <label for="GenderFemale"> Female </label>
+                    <br>
+                </span>
+                <br>
+                <label for="birthday">Birthdate</label><br>
+                <input type="date" id="birthday">
+                <br>
+                <br> 
+                <label for="chkbox" style="font-size: 20px;">Languages you know</label><br>  
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">Html</label><br>
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">CSS</label><br>
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">JavaScript</label><br>
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">Python</label><br>
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">Java</label><br>
+                <input type="checkbox" name="chkbox" id="">
+                <label for="chkbox">C,C++</label><br>
+                <br>
+                <label for="range" style="font-weight: bold;">Last year Percentage</label>
+                <span style="margin-left: 10px;">0</span>
+                <input type="range" min="0" max="100" id="range">
+                <span>100</span>
+                <br>
+                <br>
+                <label for="photoimg" style="font-size: 20px;">Your photo</label><br>
+                <input type="file" name="photoimg" id="photoimg">
+                <br>
+                <br>
+                <input type="reset" style="width: 70px; height: 30px; margin: 20px;">
+                <input type="submit" style="width: 70px; height: 30px;margin: 20px;"><br>
+                <br><br>
+                for more information
+                <a href="./../resume/Resume.html" target="_blank">click here</a>
+
+            </form>
+        </span>
+    </div>
+
+</body>
+
+</html>
