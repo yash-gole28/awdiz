@@ -30,22 +30,22 @@
 
 <body>
     <div style="display: flex;justify-content: center;margin: auto;">
-        <span style="align-content: center;margin: 5%;">
+        <span style="align-content: center;margin: 5% ;border: 2px solid black;padding: 40px;">
             <h1 style="color: blue;">Fill your details</h1><br><br>
             <form>
                 <label for="Uname" style="font-size: 20px;">Username</label>
                 <br>
-                <input type="text" id="Uname" placeholder="username">
+                <input type="text" id="Uname" placeholder="username" style="padding-left: 5px;">
                 <br>
                 <br>
                 <label for="Email" style="font-size: 20px;">Email</label>
                 <br>
-                <input type="email" id="Email" placeholder="Email">
+                <input type="email" id="Email" placeholder="Email" style="padding-left: 5px">
                 <br>
                 <br>
                 <label for="pass" style="font-size: 20px;">Password</label>
                 <br>
-                <input type="password" id="pass" placeholder="password">
+                <input type="password" id="pass" placeholder="password" style="padding-left: 5px;">
                 <br>
                 <br>
                 <span>
@@ -59,10 +59,11 @@
                 </span>
                 <br>
                 <label for="birthday">Birthdate</label><br>
-                <input type="date" id="birthday">
+                <input type="date" id="birthday"
+                    style="height: 20px;width: 100px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                 <br>
-                <br> 
-                <label for="chkbox" style="font-size: 20px;">Languages you know</label><br>  
+                <br>
+                <label for="chkbox" style="font-size: 20px;">Languages you know</label><br>
                 <input type="checkbox" name="chkbox" id="">
                 <label for="chkbox">Html</label><br>
                 <input type="checkbox" name="chkbox" id="">
@@ -91,7 +92,29 @@
                 <br><br>
                 for more information
                 <a href="./../resume/Resume.html" target="_blank">click here</a>
+                <br><br>
+                <label for="cars">Select car-</label>
+                <select name="cars" id="cars" style="height: 30px; width: 100px;">
+                    <option value=""></option>
+                    <option value="">Honda</option>
+                    <option value="">Audi</option>
+                    <option value="">Mercedes</option>
+                    <option value="">BMW</option>
+                    <option value="">Volvo</option>
 
+                </select>
+                <br><br>
+                <hr>
+                <br>
+                <label for="text">please give your feedback :-</label><br>
+                <textarea name="" id="text" cols="30" rows="10" disabled>feedback</textarea>
+                <br><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8695598069685!2d72.99514087404295!3d19.06947185217972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3c1c6aaaacd%3A0x1660edf108a1e4c4!2sAWDIZ%20%7C%20CCNA%20Linux%20Windows%20Digital%20Marketing%20Data%20Science%20Machine%20Learning%20Full%20Stack!5e0!3m2!1sen!2sin!4v1688727583289!5m2!1sen!2sin"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <label for="q">Email</label>
+                <input type="checkbox" name="q" id="q">
             </form>
         </span>
     </div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #select {
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        #signin {
+            margin-right: 20px;
+            margin-top: 20px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: rgb(248, 68, 100);
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        #bars {
+            margin-right: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <div
+            style="display: flex; justify-content: space-between;height: 70px; width: 100%;background-color:rgb(51,53,69)">
+            <div style="display: flex;">
+                <div style="display: flex;">
+                    <img style="width: 150px;height: 50px;margin-top: 5px;margin-right: 10px;margin-left: 30px;"
+                        src="./bookmyshow.png">
+                    <div
+                        style="display: flex;background-color: white;height: 35px; width: 550px;border-radius: 5px;margin-top: 17px;">
+                        <span>
+                            <i style="margin-top: 10px;margin-left: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span>
+                            <input type="text"
+                                style="width: 450px;padding-top: 7px;padding-left: 10px; margin-top: 3px;outline: none;border: none;"
+                                placeholder="search for Movies,Events,Plays,Sports and Activities">
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <select name="" id="select"
+                    style="background-color: rgb(51,53,69); color: rgb(199, 205, 209);outline: none;border: none;height: 20px;width: 75px;">
+                    <option value="">Mumbai</option>
+                    <option value="">Pune</option>
+                    <option value="">Kolkata</option>
+                    <option value="">Chennai</option>
+                    <option value="">bengaluru</option>
+                    <option value="">Hyderabad</option>
+                </select>
+                <input type="button" value="Sign in" id="signin">
+                <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+            </div>
+        </div>
+    </div>
+    <div
+        style="height: 40px;width: 100%;background-color: rgb(34,37,57); color: #ffffff;display: flex;font-family: Arial, Helvetica, sans-serif;justify-content: space-between;">
+        <span style="width: 500px;display: flex;justify-content: space-evenly;margin-top: 10px;">
+            <div style="color: rgb(199, 205, 209);">Movies</div>
+            <div style="color: rgb(199, 205, 209);">Stream <sup style="color: rgb(253, 93, 93);font-size: 10px;">NEW</sup></div>
+            <div style="color: rgb(199, 205, 209);">Events</div>
+            <div style="color: rgb(199, 205, 209);">Plays</div>
+            <div style="color: rgb(199, 205, 209);">Activities</div>
+            <div style="color: rgb(199, 205, 209);">Sports</div>
+            <div style="color: rgb(199, 205, 209);">Buzz</div>
+        </span>
+        <span style="width: 350px;display: flex;justify-content: space-evenly;font-size: 12px;margin-top: 13px;">
+            <div>ListYourShow</div>
+            <div>Corporates</div>
+            <div>Offers</div>
+            <div>Gift Cards</div>
+            
+        </span>
+    </div>
+    <div style="height: 300px;width: 100%; border: 2px solid rgb(142, 142, 243);"></div>
+    <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
