@@ -9,6 +9,7 @@
         * {
             padding: 0;
             margin: 0;
+
         }
 
         #select {
@@ -39,62 +40,493 @@
 </head>
 
 <body>
-    <div style="width: 100%;">
-        <div
-            style="display: flex; justify-content: space-between;height: 70px; width: 100%;background-color:rgb(51,53,69)">
-            <div style="display: flex;">
+    <div style="font-family: Arial, Helvetica, sans-serif;">
+        <!-- navbar -->
+        <div style="width: 100%;">
+            <div
+                style="display: flex; justify-content: space-between;height: 70px; width: 100%;background-color:rgb(51,53,69)">
                 <div style="display: flex;">
-                    <img style="width: 150px;height: 50px;margin-top: 5px;margin-right: 10px;margin-left: 30px;"
-                        src="./bookmyshow.png">
-                    <div
-                        style="display: flex;background-color: white;height: 35px; width: 550px;border-radius: 5px;margin-top: 17px;">
-                        <span>
-                            <i style="margin-top: 10px;margin-left: 10px;" class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <span>
-                            <input type="text"
-                                style="width: 450px;padding-top: 7px;padding-left: 10px; margin-top: 3px;outline: none;border: none;"
-                                placeholder="search for Movies,Events,Plays,Sports and Activities">
-                        </span>
+                    <div style="display: flex;">
+                        <img style="width: 150px;height: 50px;margin-top: 5px;margin-right: 10px;margin-left: 30px;"
+                            src="./bookmyshow.png">
+                        <div
+                            style="display: flex;background-color: white;height: 35px; width: 550px;border-radius: 5px;margin-top: 17px;">
+                            <span>
+                                <i style="margin-top: 10px;margin-left: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <input type="text"
+                                    style="width: 450px;padding-top: 7px;padding-left: 10px; margin-top: 3px;outline: none;border: none;"
+                                    placeholder="search for Movies,Events,Plays,Sports and Activities">
+                            </span>
+                        </div>
                     </div>
+
                 </div>
+                <div>
+                    <select name="" id="select"
+                        style="background-color: rgb(51,53,69); color: rgb(199, 205, 209);outline: none;border: none;height: 20px;width: 75px;">
+                        <option value="">Mumbai</option>
+                        <option value="">Pune</option>
+                        <option value="">Kolkata</option>
+                        <option value="">Chennai</option>
+                        <option value="">bengaluru</option>
+                        <option value="">Hyderabad</option>
+                    </select>
+                    <input type="button" value="Sign in" id="signin">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- second navbar -->
+        <div
+            style="height: 40px;width: 100%;background-color: rgb(34,37,57); color: #ffffff;display: flex;font-family: Arial, Helvetica, sans-serif;justify-content: space-between;">
+            <span style="width: 500px;display: flex;justify-content: space-evenly;margin-top: 10px;">
+                <div style="color: rgb(199, 205, 209);">Movies</div>
+                <div style="color: rgb(199, 205, 209);">Stream <sup
+                        style="color: rgb(253, 93, 93);font-size: 10px;">NEW</sup></div>
+                <div style="color: rgb(199, 205, 209);">Events</div>
+                <div style="color: rgb(199, 205, 209);">Plays</div>
+                <div style="color: rgb(199, 205, 209);">Activities</div>
+                <div style="color: rgb(199, 205, 209);">Sports</div>
+                <div style="color: rgb(199, 205, 209);">Buzz</div>
+            </span>
+            <span style="width: 350px;display: flex;justify-content: space-evenly;font-size: 12px;margin-top: 13px;">
+                <div>ListYourShow</div>
+                <div>Corporates</div>
+                <div>Offers</div>
+                <div>Gift Cards</div>
+
+            </span>
+        </div>
+        <!-- advertisement image -->
+        <div
+            style="height: 307px;width: 100%;background-color: rgb(235,235,235);display: flex;justify-content: center;">
+            <img style="margin-top: 10px;margin-bottom: 10px;width: 97%;border-radius: 5px;"
+                src="https://assets-in.bmscdn.com/promotions/cms/creatives/1688409341351_1240.jpg" alt="">
+        </div>
+        <!-- recommended movies list -->
+        <div style="width: 100%;background-color: rgb(245,245,245);padding-top: 30px;">
+            <div
+                style="padding-left: 20px;display: flex; justify-content: space-between;width: 95%;margin: auto;margin-bottom: 10px;">
+                <span style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;"> Recommended
+                    Movies</span>
+                <span style="font-family: Arial, Helvetica, sans-serif;color:rgb(220,58,94);font-size: 14px;">See
+                    all></span>
+            </div>
+            <div style="width: 95%;margin: auto;display: flex;height: 445px;justify-content: space-around;">
+                <div style="width: 18%;">
+                    <img style="border-radius: 7px; width: 100%;"
+                        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTM5LjhLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-ulffbqyunn-portrait.jpg"
+                        alt="">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                        Mission Impossible : Dead Reckoning-part one</p>
+                    <span style="color: rgb(123,134,136);">Action/Adventure/Thriller</span>
+                </div>
+                <div style="width: 18%;">
+                    <img style="border-radius: 7px;width: 100%;"
+                        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS40LzEwICA4LjlLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00355365-lzflppmver-portrait.jpg"
+                        alt="">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                        Baipan Bhari Deva</p>
+                    <span style="color: rgb(123,134,136);">Comedy/Drama</span>
+                </div>
+                <div style="width: 18%;">
+                    <img style="border-radius: 7px;width: 100%;"
+                        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICAyMi41SyBWb3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338378-flxyehczgl-portrait.jpg"
+                        alt="">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                        Satyaprem ki katha</p>
+                    <span style="color: rgb(123,134,136);">Drama/Musical/Romantic</span>
+                </div>
+                <div style="width: 18%;">
+                    <img style="border-radius: 7px;width: 100%;"
+                        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni4zLzEwICA3LjdLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00357727-gkcqddnxee-portrait.jpg"
+                        alt="">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                        Insidious: The Red Door</p>
+                    <span style="color: rgb(123,134,136);">Horror/Mystery/Thriller</span>
+                </div>
+                <div style="width: 18%;">
+                    <img style="border-radius: 7px;width: 100%;"
+                        src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MjA5LjRLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00347867-ysxlbmwnbz-portrait.jpg"
+                        alt="">
+                    <p
+                        style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                        Oppenheimer</p>
+                    <span style="color: rgb(123,134,136);">Biography/Drama/Historical</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second advertisement image -->
+    <div
+        style="width: 100%;background-color: rgb(245,245,245);display: flex; justify-content: center;padding-top: 50px;padding-bottom: 50px;">
+        <img style="width: 90%;"
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
+            alt="">
+    </div>
+    <!-- The best Of live Events -->
+    <div style="width: 100%;background-color: rgb(245,245,245);padding-top: 30px;padding-bottom: 30px;">
+        <div
+            style="padding-left: 20px;display: flex; justify-content: space-between;width: 90%;margin: auto;margin-bottom: 10px;">
+            <span style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;"> The
+                Best of live Events</span>
+
+        </div>
+        <div style="width: 90%;margin: auto;display: flex;height: 245px;justify-content: space-around;">
+            <div style="width: 18%;">
+                <img style="border-radius: 7px; width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTU1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshop-and-more-web-collection-202211140440.png"
+                    alt="">
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-zone-collection-202211140440.png"
+                    alt="">
 
             </div>
-            <div>
-                <select name="" id="select"
-                    style="background-color: rgb(51,53,69); color: rgb(199, 205, 209);outline: none;border: none;height: 20px;width: 75px;">
-                    <option value="">Mumbai</option>
-                    <option value="">Pune</option>
-                    <option value="">Kolkata</option>
-                    <option value="">Chennai</option>
-                    <option value="">bengaluru</option>
-                    <option value="">Hyderabad</option>
-                </select>
-                <input type="button" value="Sign in" id="signin">
-                <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTg1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202211140440.png"
+                    alt="">
+
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTA1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/music-shows-collection-202211140440.png"
+                    alt="">
+
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/esports-collection-202211140440.png"
+                    alt="">
+
+            </div>
+        </div>
+    </div>
+    <!-- premiere image -->
+    <div style="width: 100%;display: flex;justify-content: center;background-color: rgb(43,49,72);padding-top: 20px;">
+        <img style="width: 90%;margin: auto;"
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
+            alt="">
+    </div>
+    <!-- premiere movie images -->
+    <div style="width: 100%;background-color: rgb(43,49,72);padding-top: 50px;">
+        <div style="display: block; justify-content: space-between;width: 95%;margin: auto;margin-bottom: 10px;">
+            <div><span
+                    style="padding-left: 15px;font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;color: white;">
+                    Premieres</span></div>
+            <span
+                style="padding-left: 15px;font-family: Arial, Helvetica, sans-serif;color:white;font-size: 14px;">Brand
+                new releases every Friday</span>
+        </div>
+        <div style="width: 95%;margin: auto;display: flex;height: 410px;justify-content: space-around;">
+            <div style="width: 18%;">
+                <img style="border-radius: 7px; width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363608-yucjkdkglg-portrait.jpg"
+                    alt="">
+                <p
+                    style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Mission Impossible : Dead Reckoning-part one</p>
+                <span style="color: white;font-family: Arial, Helvetica, sans-serif">English</span>
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00363044-hxgnqxbdxd-portrait.jpg"
+                    alt="">
+                <p
+                    style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Baipan Bhari Deva</p>
+                <span style="color: white;font-family: Arial, Helvetica, sans-serif">English</span>
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00356168-szattyrjwz-portrait.jpg"
+                    alt="">
+                <p
+                    style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Satyaprem ki katha</p>
+                <span style="color: white;font-family: Arial, Helvetica, sans-serif">English</span>
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00352688-bqsmbbayrl-portrait.jpg"
+                    alt="">
+                <p
+                    style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Insidious: The Red Door</p>
+                <span style="color: white;font-family: Arial, Helvetica, sans-serif">Urdu</span>
+            </div>
+            <div style="width: 18%;">
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00362982-zhbnwfdwue-portrait.jpg"
+                    alt="">
+                <p
+                    style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Oppenheimer</p>
+                <span style="color: white;font-family: Arial, Helvetica, sans-serif">French</span>
+            </div>
+        </div>
+    </div>
+    <!-- events Happening near you -->
+    <div style="width: 100%;background-color: rgb(245,245,245);padding-top: 30px;">
+        <div
+            style="padding-left: 20px;display: flex; justify-content: space-between;width: 95%;margin: auto;margin-bottom: 10px;">
+            <span style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;">Events Happening
+                Near You </span>
+        </div>
+        <div
+            style="width: 95%;margin: auto;display: flex;height: 480px;justify-content: space-around;font-family: Arial, Helvetica, sans-serif;">
+            <div style="width: 18%;">
+                <!-- image1 -->
+                <img style="border-radius: 7px; width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyMSBKdWw%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00361766-pnvysmtpcp-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    SANAM LIVE IN CONCERT</p>
+                <span style="color: rgb(123,134,136);">Dublin Square,Phoenix Market City:Kurla 1.63kms away</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image2 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyMCBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00332314-kegesjneqz-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Happy Thursdays At Pheonix Marketcity </p>
+                <span style="color: rgb(123,134,136);">Phoenix Marketcity: Mumbai 1.64kms away</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image3 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxMSBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00359311-yzthagpbkq-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    FROSTYLAND</p>
+                <span style="color: rgb(123,134,136);">Phoenix Marketcity: Mumbai 1.64kms away</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image4 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxOSBKdWw%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00362958-nwkrefpxaj-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Ishaara Mehfil Nights</p>
+                <span style="color: rgb(123,134,136);">Dublin Square: Phoenix Marketcity 1.65kms away</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image5 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA1IEF1Zw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00363335-cbzjaxnaet-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Soundsworth Presents AGAM &...</p>
+                <span style="color: rgb(123,134,136);">Dublin Square: Phoenix Marketcity 1.65kms away</span>
+            </div>
+        </div>
+    </div>
+    <!-- trending searches right now -->
+    <div style="width: 100%;display: flex;justify-content: center;background-color: rgb(245,245,245);">
+        <div style="width: 95%;background-color:rgb(245,245,245);margin-bottom: 30px;">
+            <div
+                style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;margin-bottom: 30px;margin-top: 40px;margin-left: 10px;">
+                Trending Searches Right now
+            </div>
+            <div style="display: flex;flex-wrap: wrap;">
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Barbie</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Baipan Bhari Deva
+                        </div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Jawan</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Oppenheimer</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Insidious: The Red
+                            Door</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Neeyat</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Mission Impossible:
+                            Dead Reckoning-Part One</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Satyaprem Ki Katha
+                        </div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">1920: Horrors of the
+                            Heart</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+                <div
+                    style="margin-right: 10px;display: flex;flex-wrap: wrap;font-family: Arial, Helvetica, sans-serif;margin-left: 10px;margin-bottom: 10px;">
+                    <div
+                        style="margin-bottom:10px;border-radius: 5px ;background-color: #ffffff;padding-right: 50px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+                        <div style="padding-bottom: 5px;color: rgb(248,68,100);font-weight: bold;">Gadar 2</div>
+                        <div style="color:rgb(122,115,110)">Movies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 100%;background-color: rgb(245,245,245);padding-top: 30px;">
+        <div
+            style="padding-left: 20px;display: flex; justify-content: space-between;width: 95%;margin: auto;margin-bottom: 10px;">
+            <span style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;font-weight: bold;">Explore Fun
+                Activities </span>
+        </div>
+        <div
+            style="width: 95%;margin: auto;display: flex;height: 480px;justify-content: space-around;font-family: Arial, Helvetica, sans-serif;padding-bottom: 40px;">
+            <div style="width: 18%;">
+                <!-- image1 -->
+                <img style="border-radius: 7px; width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxMSBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00315217-xeekscqzdy-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Hamleys Play-Mumbai</p>
+                <span style="color: rgb(123,134,136);">Hamleys Play ,Jio World Drive,BKC</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image2 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxMiBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00310275-bfznpegvve-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Imagica Water Park </p>
+                <span style="color: rgb(123,134,136);">Imagicaa Water Park (Khopoli): Mumbai</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image3 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxMiBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00022344-sqmybjpkab-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Mumbai Filmcity Tour With Bolliywood Park</p>
+                <span style="color: rgb(123,134,136);">Gate No. 1,Dadasaheb Phalke Chitranagri: Mumbai</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image4 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxMiBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00325467-zrktetbetr-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    Water Kingdom</p>
+                <span style="color: rgb(123,134,136);">Water Kingdom: Mumbai</span>
+            </div>
+            <div style="width: 18%;">
+                <!-- image5 -->
+                <img style="border-radius: 7px;width: 100%;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxMSBKdWwgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00361621-pwudrdbvhd-portrait.jpg"
+                    alt="">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 500;margin-top: 5px;margin-bottom: 5px;">
+                    "The Crown Jewel Of Mumbai"- Inside CSMT...</p>
+                <span style="color: rgb(123,134,136);">McDonalds opp CSMT Station: Mumbai</span>
             </div>
         </div>
     </div>
     <div
-        style="height: 40px;width: 100%;background-color: rgb(34,37,57); color: #ffffff;display: flex;font-family: Arial, Helvetica, sans-serif;justify-content: space-between;">
-        <span style="width: 500px;display: flex;justify-content: space-evenly;margin-top: 10px;">
-            <div style="color: rgb(199, 205, 209);">Movies</div>
-            <div style="color: rgb(199, 205, 209);">Stream <sup style="color: rgb(253, 93, 93);font-size: 10px;">NEW</sup></div>
-            <div style="color: rgb(199, 205, 209);">Events</div>
-            <div style="color: rgb(199, 205, 209);">Plays</div>
-            <div style="color: rgb(199, 205, 209);">Activities</div>
-            <div style="color: rgb(199, 205, 209);">Sports</div>
-            <div style="color: rgb(199, 205, 209);">Buzz</div>
-        </span>
-        <span style="width: 350px;display: flex;justify-content: space-evenly;font-size: 12px;margin-top: 13px;">
-            <div>ListYourShow</div>
-            <div>Corporates</div>
-            <div>Offers</div>
-            <div>Gift Cards</div>
-            
-        </span>
+        style="padding-top: 20px;padding-bottom: 20px;font-family: Arial, Helvetica, sans-serif;padding-left: 20px;color: rgb(197,184,175);font-size: 12px;">
+        <div>Home</div>
     </div>
-    <div style="height: 300px;width: 100%; border: 2px solid rgb(142, 142, 243);"></div>
+    <div style="height: 35px;background-color: rgb(245,245,245);"></div>
+    <!-- contact us -->
+    <div style="background-color:rgb(49,48,53);height: 80px;font-family: Arial, Helvetica, sans-serif;color: #ffffff;">
+        <div style="display: flex;width: 97%;justify-content: space-between;margin: auto;">
+            <div style="display: flex;">
+                <div style="padding-top: 20px;margin-right: 20px;">
+                    <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="">
+                </div>
+                <div style="margin-top: 30px;margin-right: 20px;font-weight: bold;">List your Show</div>
+                <div style="margin-top: 30px;word-spacing: 1px;">Got a show,event,activity or a great experience? Partner with us & get
+                    listed on BookMyShow</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: rgb(236,94,113);height: 30px;margin-top: 20px;padding-left: 20px;padding-right: 20px;padding-top: 10px;border-radius: 3px;">
+                    Contact today!</div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 175px;background-color: rgb(64,64,67);"></div>
+    <div style="background-color: rgb(64,64,67);height: 200px;">
+        <div style="width: 95%;display: flex;margin: auto;padding-top: 20px;">
+            <div style="width: 50%;"><hr style="border: none;background-color: rgb(149, 149, 155) ;margin-top: 30px;height: 1px;"></div>       
+            <div><img src="./bookmyshow.png" alt=""></div>
+            <div style="width: 50%;"><hr style="border: none;background-color: rgb(149, 149, 155) ;margin-top: 30px;height: 1px;"></div>
+
+        </div>
+    </div>
+
+
+
     <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
 </body>
 
