@@ -15,7 +15,11 @@
         #screen {
             width: 100%;
             height: 2000px;
-            background-image: url(./pxfuel.jpg)
+            background-image: url(./pxfuel.jpg);
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-size: contain;
+            
         }
 
         #navbar {
@@ -44,7 +48,7 @@
 
         #myName {
             margin-top: 30px;
-          
+
 
         }
 
@@ -54,16 +58,111 @@
             text-align: center;
             height: 600px;
         }
+
         #myIntro div {
             margin-top: 150px;
             color: white;
-            
+
         }
-        #myIntro div h1{
+
+        #myIntro div h1 {
             font-size: 45px;
         }
-        #myIntro div h3{
+
+        #myIntro div h3 {
             font-size: 30px;
+        }
+
+        #about {
+            width: 70%;
+            height: 450px;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0px 0px 4px gray;
+            ;
+        }
+
+        #about-left {
+            /* border: 1px solid blue; */
+            width: 42%;
+            display: flex;
+            height: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 20px;
+
+        }
+
+        #myImage {
+            width: 130px;
+            height: 130px;
+            box-shadow: 0px 0px 8px gray;
+
+        }
+
+        #about-right {
+            /* border: 1px solid blue; */
+            width: 42%;
+            height: 80%;
+            margin-top: 40px;
+        }
+
+        #fontImages {
+            display: flex;
+            width: 40%;
+            /* border: 1px solid black; */
+            height: 45px;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        #f-imgs {
+            size: 20px;
+           
+        }
+
+        #about-right div p {
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+
+        #about-right div button {
+            margin-bottom: 20px;
+            height: 30px;
+            width: 100px;
+            font-weight: bold;
+            background-color: #0e79f4;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0px 0px 10px rgb(129, 129, 243);
+        }
+
+        #about-left div p {
+            margin-bottom: 10px;
+        }
+        #fontImages div {
+            border: 2px solid blue;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            padding-top: 8px;
+            padding-left: 6px;
+            padding-right: 6px;
+            
+        }
+        .f-imgs:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 0px 5px 10px rgb(129, 129, 243);
+           
+        }
+        #myImage{
+            border-radius:50% ;
         }
     </style>
 </head>
@@ -92,8 +191,44 @@
                 <h3>Full Stack Developer</h3>
             </div>
         </div>
-    </div>
+        
+        <div id="about">
+            <div id="about-left">
+                <div id="myImage">
+                    <img src="./man.png" alt="">
+                </div>
+                <div id="mydetails">
+                    <p><b>Name :</b> Yash Gole</p>
+                    <p><b>Profile :</b> Full Stack Developer</p>
+                    <p><b>Email :</b> ygole72@gmail.com</p>
+                    <p><b>Phone : </b>7715814355</p>
+                </div>
+            </div>
+            <div id="about-right">
+                <div>
+                    <h1>About Me</h1>
+                    <div style="border: 2px solid #0078ff; width: 30%;"></div>
+                    <p>A passionate Full Stack web Developer 🚀
+                        having an experience of building Web applications with
+                        JavaScript / HTML / CSS</p>
+                    <button>Resume</button>
+                </div>
+                <div id="fontImages">
+                    <div class="f-imgs">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </div>
+                    <div class="f-imgs">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </div>
+                    <div class="f-imgs">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
