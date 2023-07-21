@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #signin {
+            margin-right: 20px;
+            margin-top: 20px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: rgb(248, 68, 100);
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        #movieHead {
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid yellow; */
+            display: flex;
+            background-image: url("https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/insidious-the-red-door-et00357727-1688540822.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        #introLeft {
+            width: 30%;
+            /* border: 2px solid blue; */
+            /* height: 100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(26, 26, 26); */
+
+            border-radius: 8px;
+        }
+
+        #introRight {
+            width: 600px;
+            height: 400px;
+            margin-top: 50px;
+            /* border: 2px solid blue; */
+
+        }
+
+        .aboutMovie {
+            display: flex;
+            /* margin-left: 20px; */
+
+        }
+
+        .aboutMovie i {
+            color: red;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        .aboutMovie h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            margin-bottom: 20px;
+
+        }
+
+        .ratings {
+            width: 400px;
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(51, 51, 51);
+        }
+
+        .langAvailable {
+            /* background-color: #ffffff; */
+            display: flex;
+            width: 350px;
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .review {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .review2 {
+            color: rgb(203, 203, 195);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .aboutMovie span {
+            margin: 0px 5px;
+            font-weight: bold;
+        }
+
+        .movieType {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+        }
+
+        .booktickets {
+            background-color: rgb(248, 68, 100);
+            font-size: 15px;
+            padding: 16px 60px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 30px;
+
+        }
+
+        .share {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            justify-content: end;
+            width: 20%;
+            height: 100px;
+            margin: 20px 40px 0px 0px;
+            
+            
+        }
+
+        .share span {
+            padding: 7px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
+    <div>
+        <div style="width: 100%;">
+            <div
+                style="display: flex; justify-content: space-between;height: 70px; width: 100%;background-color:rgb(51,53,69)">
+                <div style="display: flex;">
+                    <div style="display: flex;">
+                        <img style="width: 150px;height: 50px;margin-top: 5px;margin-right: 10px;margin-left: 30px;"
+                            src="./bookmyshow.png">
+                        <div
+                            style="display: flex;background-color: white;height: 35px; width: 550px;border-radius: 5px;margin-top: 17px;">
+                            <span>
+                                <i style="margin-top: 10px;margin-left: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <input type="text"
+                                    style="width: 450px;padding-top: 7px;padding-left: 10px; margin-top: 3px;outline: none;border: none;"
+                                    placeholder="search for Movies,Events,Plays,Sports and Activities">
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <select name="" id="select"
+                        style="background-color: rgb(51,53,69); color: rgb(199, 205, 209);outline: none;border: none;height: 20px;width: 75px;">
+                        <option value="">Mumbai</option>
+                        <option value="">Pune</option>
+                        <option value="">Kolkata</option>
+                        <option value="">Chennai</option>
+                        <option value="">bengaluru</option>
+                        <option value="">Hyderabad</option>
+                    </select>
+                    <input type="button" value="Sign in" id="signin">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- second navbar -->
+        <div
+            style="height: 40px;width: 100%;background-color: rgb(34,37,57); color: #ffffff;display: flex;font-family: Arial, Helvetica, sans-serif;justify-content: space-between;">
+            <span style="width: 500px;display: flex;justify-content: space-evenly;margin-top: 10px;">
+                <div style="color: rgb(199, 205, 209);">Movies</div>
+                <div style="color: rgb(199, 205, 209);">Stream <sup
+                        style="color: rgb(253, 93, 93);font-size: 10px;">NEW</sup></div>
+                <div style="color: rgb(199, 205, 209);">Events</div>
+                <div style="color: rgb(199, 205, 209);">Plays</div>
+                <div style="color: rgb(199, 205, 209);">Activities</div>
+                <div style="color: rgb(199, 205, 209);">Sports</div>
+                <div style="color: rgb(199, 205, 209);">Buzz</div>
+            </span>
+            <span style="width: 350px;display: flex;justify-content: space-evenly;font-size: 12px;margin-top: 13px;">
+                <div>ListYourShow</div>
+                <div>Corporates</div>
+                <div>Offers</div>
+                <div>Gift Cards</div>
+
+            </span>
+        </div>
+        <div id="movieHead">
+            <div id="introLeft">
+                <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/insidious-the-red-door-et00357727-1688540822.jpg"
+                    alt="">
+
+            </div>
+            <div id="introRight">
+                <div class="aboutMovie">
+                    <h1>Insidious: The Red Door</h1>
+                </div>
+                <div class="aboutMovie">
+                    <i class="fa-solid fa-star"></i>
+                    <p
+                        style="font-size: 25px;margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: #ffffff;">
+                        6.3/10</p>
+                    <p
+                        style="margin-top: 5px;font-family: Arial, Helvetica, sans-serif;color: #ffffff; margin-left: 8px;">
+                        2k Votes ></p>
+
+                </div>
+                <div class="aboutMovie ratings">
+                    <div style="margin-left: 20px;">
+                        <div class="review">Add rating & review</div>
+                        <div class="review2">Your ratings matter</div>
+                    </div>
+                    <div style="margin-right: 20px;">
+                        <button
+                            style="padding: 9px;border-radius: 8px;border: none; font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Rate
+                            now</button>
+                    </div>
+                </div>
+                <div class="aboutMovie langAvailable">
+                    <div style="margin-right: 20px;background-color: #ffffff;border-radius: 2px; padding: 5px;">2D</div>
+                    <div style="margin-right: 20px;background-color: #ffffff;border-radius: 2px; padding: 5px;">
+                        English,Tamil,Telugu,Kannada,Hindi</div>
+                </div>
+                <div class="aboutMovie">
+                    <div class="movieType">
+                        <p>1h 47m<span>.</span>Horror, Mystery,Thriller<span>.</span>A<span>.</span>6 Jul, 2023</p>
+                    </div>
+                </div>
+                <div class="aboutMovie">
+                    <button class="booktickets">Book tickets</button>
+                </div>
+
+
+            </div>
+            <div class="share">
+                <div style="height: 35px; background-color: rgb(24, 37, 40) ;padding-top: 10px;opacity: 0.75;"> 
+                    <span><i class="fa-solid fa-share-nodes fa-xl"></i></span>
+                    <span>share</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

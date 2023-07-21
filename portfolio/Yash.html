@@ -14,12 +14,13 @@
 
         #screen {
             width: 100%;
-            height: 2000px;
+            height: 3000px;
             background-image: url(./pxfuel.jpg);
             /* background-size: cover; */
             background-repeat: no-repeat;
             background-size: contain;
-            
+            background-color: rgb(255, 252, 252);
+
         }
 
         #navbar {
@@ -81,7 +82,7 @@
             display: flex;
             justify-content: space-around;
             box-shadow: 0px 0px 4px gray;
-            ;
+            background-color: rgb(252, 254, 255);
         }
 
         #about-left {
@@ -120,10 +121,7 @@
 
         }
 
-        #f-imgs {
-            size: 20px;
-           
-        }
+
 
         #about-right div p {
             margin-top: 35px;
@@ -145,6 +143,7 @@
         #about-left div p {
             margin-bottom: 10px;
         }
+
         #fontImages div {
             border: 2px solid blue;
             height: 30px;
@@ -153,16 +152,76 @@
             padding-top: 8px;
             padding-left: 6px;
             padding-right: 6px;
-            
+            margin-top: 20px;
+
         }
-        .f-imgs:hover{
+
+        .f-imgs:hover {
             background-color: black;
             color: white;
             box-shadow: 0px 5px 10px rgb(129, 129, 243);
+
+        }
+
+        #myImage {
+            border-radius: 50%;
+        }
+
+        #skills {
+            width: 70%;
+            height: 600px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 100px;
+            background-color: white;
+            /* box-shadow: 0px 0px 4px gray; */
+
+        }
+
+        #skills h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #skillBox>div {
+            width: 30%;
+            height: 200px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 4px gray;
+
+        }
+
+        #skillBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #underline {
+            border: 2px solid blue;
+            width: 6%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        /* #skillBox div img{
+            height: 150px;
+            width: 150px;
+            margin-left: 50px;
            
         }
-        #myImage{
-            border-radius:50% ;
+        #skillBox div{
+            display: flex;
+            justify-content: center;
+            
+        }
+        */
+        #skillBox img {
+            height: 150px;
+            width: 150px;
+
         }
     </style>
 </head>
@@ -191,7 +250,7 @@
                 <h3>Full Stack Developer</h3>
             </div>
         </div>
-        
+
         <div id="about">
             <div id="about-left">
                 <div id="myImage">
@@ -226,6 +285,57 @@
                 </div>
             </div>
 
+        </div>
+        <div id="skills">
+
+            <h1>Skills</h1>
+            <div id="underline"></div>
+
+            <div id="skillBox">
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+
+                </div>
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div>
+                    <div style="width: 100%;display: flex;justify-content: center;"><img src="./html-icon-png-4.jpg"
+                            alt=""></div>
+                    <div style="width: 100%;display: flex;justify-content: center;">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
