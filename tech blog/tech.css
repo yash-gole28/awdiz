@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,64 +6,70 @@
     font-family: 'Space Grotesk', sans-serif;
     color: white;
 }
-#screen{
+
+#screen {
     width: 100%;
-   
+
 }
-#nav{
+
+#nav {
     width: 100vw;
     border-bottom: 1px solid rgb(79, 78, 78);
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 97vw;
     margin: 25px auto;
     height: 10vh;
-   
-    
+
+
     /* border: 1px solid white; */
 }
 
-#navbar ul{
+#navbar ul {
     display: flex;
     list-style: none;
     /* justify-content: space-between; */
 }
 
-#navleft{
+#navleft {
     width: 10vw;
     margin-left: 20px;
 }
-#navcentre ul{
+
+#navcentre ul {
     width: 37vw;
     display: flex;
     margin-right: 35px;
     justify-content: space-between;
 }
 
-#navright{
+#navright {
     width: 7vw;
     display: flex;
     justify-content: space-between;
 }
-.box2{
+
+.box2 {
     display: none;
 }
 
-#techimg{
+#techimg {
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
 }
 
-#techimg img{
+#techimg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#techtop{
+
+#techtop {
     width: 100vw;
     height: 600px;
     display: flex;
@@ -72,123 +78,238 @@
     justify-content: center;
     /* border: 1px solid white; */
 }
-.box1{
+
+.box1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-right: 20px;
 }
-#techtop h1{
+
+#techtop h1 {
     font-size: 80px;
     font-weight: 100;
     margin-bottom: 20px;
+
 }
-#techtop p{
+
+#techtop p {
     text-align: center;
     text-align-last: auto;
-    color:  #b6b6b6;
+    color: #b6b6b6;
     line-height: 25px;
     font-size: 18px;
     word-spacing: 3px;
-    
+
 }
-#button{
-    width: 150px;
-    height: 50px;
-    background-color: rgb(209,208,208);
+
+#button {
+    width: 180px;
+    height: 45px;
+    /* background-color: rgb(209, 208, 208); */
+    background-image: linear-gradient(to right, grey, white);
     color: black;
     border-radius: 25px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 90px;
     border: none;
     outline: none;
     margin-bottom: 10px;
+    font-size: 16px;
+    /* transition: 1s;
+    opacity: 0.7; */
+    
 }
-.shrink{
-    /* width: 360px; */
-    width: 30%;
-    height: 520px;
-   
+/* #button:hover{
+    transform: translate(0px,-50px);
+    opacity: 1;
+} */
+
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
 }
 
-.img img{
+.wrap-left {
+    width: 25%;
+    height: 500px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.wrap-left p {
+    color: rgb(181, 181, 181);
+    line-height: 23px;
+    font-size: 17px;
+}
+
+#wrap h1 {
+    width: 250px;
+
+}
+
+.wrap-right {
+    width: 65%;
+    height: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-centre {
+    margin: 0px 20px;
+}
+
+.image-align {
+    width: 47%;
+    height: 500px;
+}
+
+.img {
+    width: 100%;
+    height: 500px;
+}
+
+.img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.shrink h1{
-    font-weight: 100;
-    font-size: 40px;
+
+#adv {
+    width: 100%;
+    margin-top: 150px;
 }
-.shrink p{
-    line-height:25px;
-    font-size: 18px;
-}
-#wrapit{
+
+.adv-text {
+
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid white; */
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* position: relative; */
-}
-.align-vertical{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
 }
 
+.adv-text-left {
+    width: 50%;
+    /* text-align: end; */
+    margin-right: 30px;
+}
 
+.adv-text-left h2 {
+    font-weight: normal;
+    font-size: 45px;
+    height: 150px;
+}
 
+.adv-text-right {
+    width: 40%;
+    border-left: 1px solid rgb(47, 46, 46);
+    padding-left: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
 
+}
+
+.adv-text-right p {
+    color: rgb(181, 181, 181);
+    line-height: 23px;
+    font-size: 17px;
+
+}
 
 @media screen and (max-width:900px) {
-    .box2{
+    .box2 {
         display: block;
     }
-    .box1{
+
+    .box1 {
         display: none;
     }
-    #navcentre{
+
+    #navcentre {
         display: none;
     }
-    
-    #techtop h1{
+
+    #techtop h1 {
         font-size: 70px;
     }
 
-    #wrapit{
-        width: 100%;
-        flex-direction: column;
+    #wrap {
+        flex-wrap: wrap;
+
+
     }
 
-    .shrink>div{
+    .wrap-left {
         width: 100%;
-        
-    }
-    .img{
-      width: 100vw;
-      /* height: 100vh; */
-    }
-    .single{
-        width: 100%;
-        height: 50%;
-    }
-    .double{
-       width:  90%;
-       height: 50%;
-       margin: 20px auto;
-    }
-    .divide{
-        display: flex;
-        justify-content: space-around;
-    }
-    .align-vertical{
         display: block;
-        margin-left: 20px;
+        height: 100%;
+        margin-bottom: 20px;
     }
-    /* .shrink{
-        margin: 0px 40px;
-    } */
+
+    .wrap-right {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .adv-text {
+        flex-wrap: wrap;
+    }
+
+    .adv-text-left {
+        display: block;
+        width: 100%;
+    }
+
+    .adv-text-right {
+        display: block;
+        width: 100%;
+    }
+
+    #adv {
+        display: inline-block;
+    }
 
 }
 
 
 
+
+@media screen and (max-width:765px) {
+
+    .wrap-right {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+    }
+
+    .image-align {
+        width: 100%;
+        /* height: 500px; */
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+   .adv-text-left{
+    text-align: center;
+   }
+   .adv-text-right{
+    text-align: center;
+    padding:0px;
+   }
+
+  
+}
