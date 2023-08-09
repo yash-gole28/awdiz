@@ -1,0 +1,137 @@
+@media screen and (max-width:900px) {
+    .box2 {
+        display: block;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    #navcentre {
+        display: none;
+    }
+
+    #techtop h1 {
+        font-size: 70px;
+    }
+
+    #wrap {
+        flex-wrap: wrap;
+
+    }
+
+    .wrap-left {
+        width: 100%;
+        display: block;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .wrap-right {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .adv-text {
+        flex-wrap: wrap;
+    }
+
+    .adv-text-left {
+        display: block;
+        width: 100%;
+    }
+
+    .adv-text-right {
+        display: block;
+        width: 100%;
+    }
+
+    #adv {
+        display: inline-block;
+    }
+
+    #c-wrap>div:nth-child(1) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .imgs3-wrap {
+        width: 40%;
+    }
+
+    #divide-2 {
+        display: block;
+    }
+
+    .dvd-1 {
+        width: 100%;
+    }
+
+    .dvd-2 {
+        width: 100%;
+    }
+
+    #image-change {
+        display: block;
+    }
+
+    .img-ch-1 {
+        width: 70%;
+        /* height: 400px; */
+        margin: auto;
+    }
+
+    .img-ch-2 {
+        width: 70%;
+        height: 400px;
+        margin: 20px auto;
+    }
+
+    .img-titles {
+        border: none;
+    }
+
+    #feedback{
+        display: block;
+    }
+    .fdbk-left{
+        width: 90%;
+        margin: auto;
+    }
+    .fdbk-right{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    #click-effect{
+        display: block;
+    }
+
+    .left-effect{
+        width: 90%;
+        margin: 50px auto;
+        /* display: block; */
+    }
+    .right-img{
+        /* display: block; */
+        width: 90%;
+        margin: auto;
+    }
+    .f-c1,.f-c2,.f-c3,.f-c4{
+        width: 47%;
+    }
+}

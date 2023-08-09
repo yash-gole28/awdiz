@@ -1,0 +1,51 @@
+@media screen and (max-width:765px) {
+
+    .wrap-right {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+    }
+
+    .image-align {
+        width: 100%;
+        /* height: 500px; */
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+    .adv-text-left {
+        text-align: center;
+    }
+
+    .adv-text-right {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5 {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .imgs3-wrap {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+
+    #parallax>div {
+        display: block;
+        width: 100%;
+    }
+
+    .f-c1,.f-c2,.f-c3,.f-c4{
+        width: 95%;
+        height: 200px;
+    }
+}
