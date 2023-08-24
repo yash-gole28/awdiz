@@ -9,16 +9,31 @@ function register(event) {
 
     if (userName && userEmail && userPassword && userConfirmPassword) {
         if (userPassword === userConfirmPassword) {
-            alert("registration successful")
+            // alert("registration successful")
 
             userObject = { name: userName, email: userEmail, password: userPassword }
 
             var array = JSON.parse(localStorage.getItem("users")) || []
+            for(var i = 0 ; i<array.length; i++){
+                if(userEmail == array[i].email){
+                    console.log(array[i].email)
+                    let alert = document.getElementById("popup")
+              
+               return  alert.innerText = "email already exists"
+                //    return alert("email already exists")
+                }
+                
+            }
+            if(userPassword.length < 4){
+               let pop = document.getElementById("popup")
+              
+               return  pop.innerText = "password must be atleast 4 characters"
+            }
 
             array.push(userObject)
 
             localStorage.setItem("users", JSON.stringify(array))
-            console.log(array)
+            // console.log(array)
 
         }
         else {
@@ -63,7 +78,7 @@ function validate(event) {
             }
         }
 
-        // console.log(email,pass)
+        console.log(email,pass)
     }
     else {
         alert("incomplete")
@@ -80,20 +95,24 @@ function validate(event) {
 function checkUser(event) {
     event.preventDefault();
 
-    // var email = JSON.stringify(document.getElementById("userEmail").value)
-    var email = document.getElementById("userEmail").value
+    var name = JSON.stringify(document.getElementById("username").value)
+    var email = JSON.stringify(document.getElementById("userEmail").value)
     // var pass = JSON.stringify(document.getElementById("userPassword").value)
 
     let users = JSON.parse(localStorage.getItem("users"));
-   
-            // let registeredEmail = JSON.stringify(users[i].email);
+    for (var i = 0; i < users.length; i++) {
+            let registeredEmail = JSON.stringify(users[i].email);
             // let registeredPassword = JSON.stringify(users[i].password);
             // let registeredName = JSON.stringify(users[i].name)
-            // console.log([i])
             
-            var find = users.includes(email)
-            if(find){
-                console.log("already exists")
+            if(registeredEmail == email){
+                console.log("user already exists")
+                var array = JSON.parse(localStorage.getItem("users")) 
+                array.pop()
             }
+            // var find = users.includes(JSON.stringify(users.email))
+            // if(find){
+            //     console.log("already exists")
+            // }
         }
-
+}
