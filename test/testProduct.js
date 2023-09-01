@@ -8,12 +8,12 @@ let image = document.getElementById("image").value
 console.log(name,price,image)
 if(name && price && image){
     // alert("great")
-    let data = {pName:name,pPrice:price,pImage:image}
-   JSON.parse(localStorage.getItem("users"))
+    let data = { pName: name,pPrice: price,pImage: image }
+   
    let array =JSON.parse(localStorage.getItem("users")) || []
-    array.push(data)
+    array.push(data);
     localStorage.setItem("users",JSON.stringify(array)) 
-
+    return array
 }
 else{
     alert("incomplete")
