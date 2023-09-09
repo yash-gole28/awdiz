@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: hsl(214, 37%, 96%); */
+
+}
+
+/* #select {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+} */
+
+#signin {
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(248, 68, 100);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+#bars {
+    margin-right: 50px;
+
+}
+
+#signin:hover+#signPop {
+    display: block;
+
+}
+
+#signPop {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    /* bottom: 50; */
+    border: 2px solid red;
+    margin: auto;
+    background-color: antiquewhite;
+    display: none;
+}
+
+#myInfo {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(229, 24%, 31%);
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-left: 50px;
+}
+
+#myInfo ul {
+    display: flex;
+    list-style: none;
+
+    /* align-items: center; */
+}
+
+#myInfo ul li {
+    margin: 0px 10px;
+}
+
+
+
+#guestInfo {
+
+
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content-top {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: linear-gradient(to right, rgb(43, 49, 72), rgb(235, 78, 98));
+}
+
+#g-img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: 70px;
+    left: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(153, 153, 153);
+}
+
+#g-img i {
+    /* padding: 50%; */
+    margin-top: 10px;
+    color: rgb(153, 153, 153);
+}
+
+#g-img div {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+
+
+.content-data {
+    width: 90%;
+    height: auto;
+    margin: -30px auto;
+    /* border: 1px solid red; */
+}
+
+.content-data div {
+    margin: 10px;
+}
+
+.content-data label {
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    margin-right: 30px;
+
+}
+
+#mobile-no>div {
+    background-color: hsl(44, 100%, 80%);
+}
+
+
+#content-2 {
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    /* margin-top: 40px; */
+    /* padding-top: 20px; */
+    padding-bottom: 60px;
+    border-radius: 5px;
+    /* border: 1px solid green; */
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content-2 label {
+    /* color: rgb(153, 153, 153) ; */
+    color: black;
+    font-size: 13px;
+    margin-right: 75px;
+    margin-top: 40px;
+
+}
+
+#content-2 input {
+    width: 70%;
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 15px;
+}
+
+.gender {
+    margin-top: 40px;
+}
+
+.gender button {
+    padding: 7px 20px;
+    margin-right: 20px;
+    margin-left: -40px;
+    background-color: #fff;
+    border: 1px solid rgb(127, 125, 125);
+    border-radius: 8px;
+}
+
+.gender button:focus {
+    background-color: rgb(238, 104, 104);
+}
+
+
+
+.married {
+    margin-top: 40px;
+}
+
+.married button {
+    padding: 7px 20px;
+    margin-right: 20px;
+    margin-left: -40px;
+    background-color: #fff;
+    border: 1px solid rgb(127, 125, 125);
+    border-radius: 8px;
+}
+
+.married button:focus {
+    background-color: rgb(238, 104, 104);
+}
+
+
+#content-3 {
+    width: 50%;
+    height: auto;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 20px; */
+    padding-bottom: 60px;
+    border-radius: 5px;
+    /* border: 1px solid green; */
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content-3 label{
+    color: black;
+    font-size: 13px;
+    margin-right: 75px;
+    margin-top: 40px;
+}
+
+#content-3 input {
+    width: 70%;
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 15px;
+}

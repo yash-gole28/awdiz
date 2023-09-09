@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guest login</title>
+    <link rel="stylesheet" href="clone.css">
+</head>
+
+<body>
+    <div id="screen" style="background-color: hsl(214, 37%, 96%);">
+        <!-- navbar -->
+
+        <div style="width: 100%;">
+            <div
+                style="display: flex; justify-content: space-between;height: 70px; width: 100%;background-color:rgb(51,53,69)">
+                <div style="display: flex;">
+                    <div style="display: flex;">
+                        <img style="width: 150px;height: 50px;margin-top: 5px;margin-right: 10px;margin-left: 30px;"
+                            src="./bookmyshow.png">
+                        <div
+                            style="display: flex;background-color: white;height: 35px; width: 550px;border-radius: 5px;margin-top: 17px;">
+                            <span>
+                                <i style="margin-top: 10px;margin-left: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <input type="text"
+                                    style="width: 450px;padding-top: 7px;padding-left: 10px; margin-top: 3px;outline: none;border: none;"
+                                    placeholder="search for Movies,Events,Plays,Sports and Activities">
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="display: flex;align-items: center;">
+                    <select name="" id="select"
+                        style="background-color: rgb(51,53,69); color: rgb(199, 205, 209);outline: none;border: none;height: 20px;width: 75px;">
+                        <option value="">Mumbai</option>
+                        <option value="">Pune</option>
+                        <option value="">Kolkata</option>
+                        <option value="">Chennai</option>
+                        <option value="">bengaluru</option>
+                        <option value="">Hyderabad</option>
+                    </select>
+                    <!-- <input type="button"  value="Sign in" id="signin">
+                <div id="signPop"></div></input> -->
+
+                    <!-- <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i> -->
+
+                    <div>
+                        <img style="width: 30px ; height: 30px;margin: 0px 20px 0px 20px;"
+                            src="https://in.bmscdn.com/m6/images/my-profile/bms-user.png" alt="">
+                    </div>
+                    <div style="margin-right: 20px;font-family: Arial, Helvetica, sans-serif;color: #ffffff;">Hi,Guest
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second navbar -->
+        <div
+            style="height: 40px;width: 100%;background-color: rgb(34,37,57); color: #ffffff;display: flex;font-family: Arial, Helvetica, sans-serif;justify-content: space-between;">
+            <span style="width: 500px;display: flex;justify-content: space-evenly;margin-top: 10px;">
+                <div style="color: rgb(199, 205, 209);">Movies</div>
+                <div style="color: rgb(199, 205, 209);">Stream <sup
+                        style="color: rgb(253, 93, 93);font-size: 10px;">NEW</sup></div>
+                <div style="color: rgb(199, 205, 209);">Events</div>
+                <div style="color: rgb(199, 205, 209);">Plays</div>
+                <div style="color: rgb(199, 205, 209);">Activities</div>
+                <div style="color: rgb(199, 205, 209);">Sports</div>
+                <div style="color: rgb(199, 205, 209);">Buzz</div>
+            </span>
+            <span style="width: 350px;display: flex;justify-content: space-evenly;font-size: 12px;margin-top: 13px;">
+                <div>ListYourShow</div>
+                <div>Corporates</div>
+                <div>Offers</div>
+                <div>Gift Cards</div>
+
+            </span>
+        </div>
+        <div id="myInfo">
+            <ul>
+                <li>Your Orders</li>
+                <li>Stream Library</li>
+                <li>QuikPay</li>
+                <li>Rewards</li>
+                <li>Restaurant Discount</li>
+                <li>Discount Store</li>
+                <li>Profile</li>
+                <li>Saved Devices</li>
+            </ul>
+        </div>
+
+
+
+        <div id="guestInfo">
+            <div id="content">
+                <div id="content-top"></div>
+                <div id="g-img">
+                    <i class="fa-solid fa-camera-retro fa-2xl"></i>
+                    <div>+Add</div>
+                </div>
+
+                <div class="content-data">
+                    <h3 style="font-weight: 300;padding-left: 10px;">Account Details</h3>
+
+                    <div> <label for="email">Email Address</label> <span style="margin-left: 20px;"
+                            id="email">ygole2806@gmail.com</span></div>
+                    <div> <label for="mobile-no">Mobile Number</label>
+                        <span id="mobile-no" style="display: inline-block;">
+                            <div style="display: inline-block;width:30vw; border-radius: 5px;">
+                                <div style="color: rgb(243, 90, 90);">+Add Mobile Number</div>
+                                <div style="font-size: 13px;">Get a copy of the tickets on Whatsapp/SMS</div>
+                            </div>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-2">
+                <div class="content-data" style="padding-top: 30px;">
+                    <h3 style="font-weight: 300; margin-top: 30px;">Personal Details</h3>
+                    <label  class="label" for="f-name">First Name</label>
+                    <input type="text" id="f-name" placeholder="Enter First Name"> <br>
+                    <label class="label" for="l-name" >Last Name</label>
+                    <input type="text" id="l-name" placeholder="Enter Last Name">
+                    <label for="dob" style="margin-right: 33px;">Birthday(Optional)</label>
+                    <input type="date" name="" id="dob">
+                    <label for="gender" class="gender">Identity(Optional)</label>
+                    <span id="gender" class="gender"><button style="margin-right: 50px;">Male</button> <button class="gender">Female</button></span><br>
+                    <label for="married" class="married">Married(Optional)</label>
+                    <span id="married" class="married"><button style="margin-right: 50px;" class="married">Yes</button><button class="married">No</button></span>
+                </div>
+            </div>
+
+            <div id="content-3">
+                <div class="content-data">
+                    <h3 style="font-weight: 300; margin-top: 20px;padding-top: 50px;">Address (Optional)</h3>
+                    <label for="pincode" style="margin-right: 50px;">Area Pincode</label>
+                    <input type="text" id="pincode" placeholder="E.g 400703"><br>
+                    <label for="Add1" style="margin-right: 70px;">Address 1</label>
+                    <input type="text" id="Add1" placeholder="Flat no.,House no.,Building"><br>
+                    <label for="Add2" style="margin-right: 70px;">Address 2</label>
+                    <input type="text" id="Add2" placeholder="Area,Colony,Street,Sector,Village"><br>
+                    <label for="Landmark" style="margin-right: 70px;">Landmark</label>
+                    <input type="text" id="Landmark" placeholder="E.g Prithvi Theatre"><br>
+                    <label for="city" style="margin-right: 70px;">Town/City</label>
+                    <input type="text" placeholder="E.g mumbai"><br>
+                    <label for="pincode" style="margin-right: 50px;">Area Pincode</label>
+                    <input type="text" placeholder="E.g 400703"><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/87b6fff0e9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
